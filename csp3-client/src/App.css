@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap');
+
+* {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.card1 {
+  min-height: 100%;
+}
+
+.card2 {
+  height: 3.5em;
+}
+
+.card3 {
+  height: 12em;
+  white-space: pre-wrap;
+  overflow: auto;
+}
+
+.highlight-card {
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.highlight-card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.14);
+  z-index: 2;
+}
+
+.order-card,
+.highlight-card {
+  transition: transform 0.22s cubic-bezier(.34,1.56,.64,1), box-shadow 0.22s;
+}
+
+.order-card:hover,
+.highlight-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 12px 36px rgba(0,0,0,0.18);
+  z-index: 2;
+}
+
+body {
+  background: #f6f8fa;
+}
+
+#motto {
+  font-style: italic;
+}
+
+.qty {
+  width: 15% !important;
+}
+
+ul {
+  list-style-type: circle;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes pulseGlow {
+  0% {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(20, 8, 89, 0.6);
+  }
+  50% {
+    text-shadow: 0 0 20px rgb(255, 255, 255),  0 0 20px rgba(20, 8, 89, 0.6);
+  }
+  100% {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(20, 8, 89, 0.6);
+  }
+}
